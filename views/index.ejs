@@ -1,6 +1,25 @@
 <%- include("header.ejs") %>
 
-<h1>Welcome</h1>
+<form action="/showWeather" method="POST">
+    <input type="text" name="city" placeholder="City Name">
+    <button type="submit"></button> 
+</form>
+
+<% if (locals.content) { %>
+    <h1>Weather Information</h1>
+    <p>City: <%= content.name %></p>
+    <p>Temperature: <%= content.main.temp %> K</p>
+    <p>Humidity: <%= content.main.humidity %> K</p>
+    <p>Weather: <%= content.weather[0].description %></p>
+<% } else if (locals.cityNotFound) { %>
+    <%= cityNotFound %>
+<% } else { %>
+   
+<% } %>
 
 
+
+   
+    
+   
 <%- include("footer.ejs") %>
