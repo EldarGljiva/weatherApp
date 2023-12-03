@@ -15,6 +15,15 @@ app.get("/", async (req, res) => {
   res.render("index.ejs");
 });
 
+const date = new Date();
+
+let day = date.getDate();
+let month = date.getMonth() + 1;
+let year = date.getFullYear();
+
+let currentDate = `${day}-${month}-${year}`;
+console.log(currentDate);
+
 app.post("/showWeather", async (req, res) => {
   try {
     const cityName = req.body.city;
@@ -23,6 +32,7 @@ app.post("/showWeather", async (req, res) => {
     });
     res.render("index.ejs", {
       content: result.data,
+      currentDate,
     });
     console.log(result.data);
   } catch (error) {

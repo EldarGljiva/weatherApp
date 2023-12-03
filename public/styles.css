@@ -1,0 +1,135 @@
+input {
+  font-family: "Playfair Display", serif;
+}
+.custom-container {
+  margin: 0 auto;
+  max-width: 900px;
+}
+.custom-container2 {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 20vh;
+}
+input {
+  background: transparent;
+  border-radius: 50px;
+  color: white;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  box-shadow: 0px 4px 10px #4793bf;
+  height: 55px;
+  width: 350px;
+  padding: 20px;
+}
+button {
+  position: absolute;
+  right: 0px;
+  top: 5px;
+  margin-right: 5px;
+  border-radius: 50px;
+  width: 50px;
+  height: 80%;
+  overflow: hidden; /*Anything that goes outside of button should not be visible */
+  border-style: hidden;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+input:focus {
+  outline: none;
+  border: 1px solid #c7ddcc;
+}
+::placeholder {
+  color: #c7ddcc;
+}
+svg {
+  width: 30px;
+  height: 30px;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+.flex-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.flex-row-additional-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 50px;
+}
+.temperature {
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+}
+#cityName {
+  font-size: 2.5rem;
+  color: #ddede1;
+  text-align: center;
+}
+#date {
+  font-size: 1.5rem;
+  color: #c7ddcc;
+  text-align: center;
+  margin-bottom: 45px;
+}
+h3,
+p,
+img {
+  margin: 0px;
+}
+p {
+  text-align: center;
+}
+.additional-info {
+  background-color: rgba(170, 224, 255, 0.2);
+  padding: 40px;
+  border-radius: 50px;
+  box-sizing: border-box;
+  height: 220px;
+  font-family: "Open Sans", sans-serif;
+}
+.additional-info > p {
+  color: rgb(253, 253, 255);
+  font-size: 2rem;
+}
+img {
+  height: 70px;
+  width: 70px;
+}
+@media (max-width: 600px) {
+  input {
+    width: 300px;
+  }
+  .flex-row-additional-info {
+    flex-direction: column;
+  }
+}
+@media (max-width: 1200px) {
+  .responsive-flex-row {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+@media (min-width: 1201px) {
+  .responsive-flex-row {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+}
