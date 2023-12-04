@@ -36,7 +36,7 @@ app.post("/showWeather", async (req, res) => {
     });
     console.log(result.data);
   } catch (error) {
-    const cityNotFound = "City Doesn't Exist";
+    const cityNotFound = "I am used just to display error message";
     console.error("Error fetching weather data:", error.message);
     res.render("index.ejs", {
       cityNotFound: cityNotFound,

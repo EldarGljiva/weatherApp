@@ -100,7 +100,7 @@ p {
   padding: 40px;
   border-radius: 50px;
   box-sizing: border-box;
-  height: 220px;
+  height: 200px;
   font-family: "Open Sans", sans-serif;
 }
 .additional-info > p {
@@ -132,4 +132,23 @@ img {
     flex-direction: row;
     gap: 40px;
   }
+}
+/* HERE IS STYLE FOR STARTING PAGE */
+.starting-page {
+  padding: 40px;
+  background-color: rgba(170, 224, 255, 0.2);
+  border-radius: 50px;
+  padding-bottom: 60px;
+  max-width: 300px;
+}
+.starting-page > h2 {
+  font-size: 2rem;
+  color: rgb(241, 241, 241);
+  text-align: center;
+}
+.starting-page > p {
+  font-size: 1rem;
+  color: #e1ece3;
+  font-family: "Open Sans", sans-serif;
+  text-align: justify;
 }

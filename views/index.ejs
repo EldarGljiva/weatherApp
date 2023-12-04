@@ -45,8 +45,16 @@
             </div>
     </div>
     <% } else if (locals.cityNotFound) { %>
-        <p> <%= cityNotFound %></p>
+       <p style="color:white;font-size: 1.5rem;">Oops! Looks like the city you entered doesn't exist</p>
         <% } else { %>
+            <div class ="custom-container starting-page">
+                <h2 >
+                    NOTE TO USERS:
+                </h2>
+                <p>TO PROVIDE YOU WITH ACCURATE WEATHER INFORMATION, PLEASE ENSURE THE FOLLOWING</p></br>
+                <p><span style="color:rgba(250, 250, 60, 0.8);font-weight: bold;">ACCURATE CITY NAME</span>: If you're having trouble finding a smaller town, try entering the name of a nearby major city</p>
+                
+            </div>>
         <% } %>
 </div>
 <%- include("footer.ejs") %>
