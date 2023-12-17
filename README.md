@@ -18,9 +18,9 @@ While working on this project, I deepened my understanding of JavaScript (NodeJS
  API of my choice was OpenWeather. It was a great experience that taught me how to utilize APIs and made me a more skilled developer.
 
 ## How to run
--open terminal > type npm install >type node app.js > type in browser: localhost:3000
+-open terminal > type `npm install` >type `node app.js` > type in browser: `http://localhost:3000`
 
-⚠️ Note: Before running the application, make sure to run npm install to install the required dependencies.
+⚠️ Note: Before running the application, make sure to run `npm install` to install the required dependencies.
 
 ## Screenshots
 ![weatherApp](https://github.com/EldarGljiva/weatherApp/assets/116194253/3c02333a-4855-4b5f-9eb7-8558787942a2)
